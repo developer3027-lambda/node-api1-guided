@@ -8,57 +8,18 @@ The code for the guided project will be written in a single file for simplicity.
 
 ## Prerequisites
 
-- an HTTP client like [Postman](https://www.getpostman.com/downloads/) or [Insomnia](https://insomnia.rest/download/).
+- a REST client like [Insomnia](https://insomnia.rest/download/) or [Postman](https://www.getpostman.com/downloads/) installed.
 
 ## Project Setup
 
-- [ ] **fork** and clone this repository.
+- [ ] fork and clone this repository.
 - [ ] **CD into the folder** where you cloned **your fork**.
+- [ ] type `npm i` to download dependencies. This step is equivalent to using `yarn` for React Projects.
 
-## Assignment
+Please follow along as the instructor builds the API step by step.
 
-Build a RESTful Web API to manage _"Lessons"_ and _"Hubs"_. A _Hub_ is a group chat channel that brings together an instructor and a group of students from the same cohort as they work on a _Lesson_.
+## What is Node js
+- Node js is a javascript outside of the browser. It allows a developer to create server software in Javascript instead of C++. With it web and web apps can be created, start to finish, with the same language. Super cool. Another advantage is that Javascript runs line by line. It handles one task at a time, and so, it can not take advantage of multi cores. One does not have to worry about making the code crazy complex! Plus, you can utilize the new async features to take full advantage of the single core cpu process. Finally, kinda like a side, candy topping that you forget because the product is already so awesome, is NPM! NPM! NPM with an endless bucket of tools! So many tools that you will never use them all. Yep, that is a challange.
 
-An example would be a _Hub_ created to go over the "Introduction to Node and Express" lesson for the _Web 1_ cohort.
-
-A Lesson has:
-
-- a unique `id`.
-- a `name`.
-
-A Hub has:
-
-- a unique `id`.
-- a `name`.
-- a `lessonId` that connects it to the corresponding Lesson.
-- a `cohort`.
-
-### Features
-
-The Web API must provide a set of `endpoints` to fulfill the following needs:
-
-- add a new Lesson.
-- view a list of existing Lessons.
-- view the details of a single Lesson
-- update the information of an existing Lesson.
-- remove a Lesson.
-- add a new Hub.
-- view a list of existing Hubs.
-- view the details of a single Hub
-- update the information of an existing Hub.
-- remove a Hub.
-
-Here is a table with the `endpoint` descriptions:
-
-| Action               | URL               | Method | Response         |
-| :------------------- | :---------------- | :----- | :--------------- |
-| Add a Lesson         | /api/lessons      | POST   | the new Lesson   |
-| View list of Lessons | /api/lessons      | GET    | array of Lessons |
-| View Lesson details  | /api/lessons/{id} | GET    | a Lesson         |
-| Update Lesson        | /api/lessons/{id} | PATCH  | updated Lesson   |
-| Remove a Lesson      | /api/lessons/{id} | DELETE | deleted Lesson   |
-| Add a Hub            | /api/hubs         | POST   | the new Hub      |
-| View list of Hubs    | /api/hubs         | GET    | array of Hubs    |
-| View Hub details     | /api/hubs/{id}    | GET    | a Hub            |
-| Update Hub           | /api/hubs/{id}    | PATCH  | updated Hub      |
-| Remove a Hub         | /api/hubs/{id}    | DELETE | deleted Hub      |
+## What is Express js
+- Express makes using node tons easier. Express is a module for node and allows you to write lots of code in just a few lines. You can write single page applications, restful api's, or serve up nearly anything you want to like images, pdf, etc. Writing server code and writing end points is made a breeze with express. With express, writing functions for middleware, routing, helpers or views is made simplier.
